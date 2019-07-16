@@ -12,7 +12,7 @@ void setup() {
 }
 
 void draw() {  
-  for(int i = 0; i<40; i++){
+  for(int i = 0; i<10; i++){
     float pointillize = random(2, 15); //pick a random size for our ellipses 
     int x = int(random(img.width)); //pick a random x
     int y = int(random(img.height)); //pick a random y 
