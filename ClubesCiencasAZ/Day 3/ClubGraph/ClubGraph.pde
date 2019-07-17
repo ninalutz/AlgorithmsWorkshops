@@ -13,7 +13,7 @@ Table data;
 
 // Runs Once
 void setup() {
-  size(1400, 700);
+  size(1800, 1000);
   data = loadTable("clubInfo.csv", "header");
   initialize();
 }

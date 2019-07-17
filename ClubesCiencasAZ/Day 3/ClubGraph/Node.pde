@@ -59,7 +59,7 @@ class Node {
     }
     
     ellipse(screenLocation.x, screenLocation.y, 30, 30);
-    
+    textSize(20);
     text(name + "\n" + "Year: " + year, screenLocation.x + 30, screenLocation.y + 30);
   }
   
