@@ -38,13 +38,10 @@ void draw() {
 }
 
 void mousePressed() {
-  
-  //background(#FF0000, 100);
-  
   for (Node p: people) {
     if(p.checkSelection()) {
       break;
-    } // ONLY SELECTS ONE PERSON WHEN MOUSE IS CLICKED
+    } 
   }
 }
 
