@@ -18,6 +18,10 @@ void setup() {
   size(1400, 700);
   data = loadTable("clubInfo.csv", "header");
   initialize();
+  BFS bfs = new BFS(nodes1, edges1);
+  bfs.colorNode();
+  BFS bfs2 = new BFS(nodes2, edges2);
+  bfs2.colorNode();
 }
 
 // Runs Over and Over at 60 - FPS
