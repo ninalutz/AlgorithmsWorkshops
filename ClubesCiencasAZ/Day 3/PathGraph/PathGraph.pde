@@ -4,6 +4,7 @@ List<Node> nodesList;
 int numNodes = 20;
 DijkstraAlgorithm finder;
 Graph g;
+  float pathLength;
 
 void setup(){
   size(1200, 500);
@@ -35,6 +36,8 @@ void setup(){
   nodesList.get(0).start = true;
   nodesList.get(10).end = true;
 
+
+  
   if(path.size() > 0){
     for (Node vertex : path) {
         System.out.println(vertex.getName());

@@ -15,8 +15,8 @@ class Edge {
     float x2 = destination.screenLocation.x;
     float y2 = destination.screenLocation.y;
     
-    strokeWeight(2); // 5 pixels wide line
-    stroke(200); // White, but translucent 100/255
+    strokeWeight(2); 
+    stroke(200); 
 
     if(origin.hoverEvent() || destination.hoverEvent()) stroke(0, 200, 200);
     

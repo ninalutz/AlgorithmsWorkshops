@@ -1,4 +1,3 @@
-// This Node Class Will Represent people in our class
 
 class Node {
   
@@ -7,7 +6,7 @@ class Node {
   color favorite;
   
   PVector screenLocation;
-  boolean locked; // Am I editing my Node location
+  boolean locked; 
   
   Node(String _name, int _year) {
     name = _name;
@@ -19,7 +18,6 @@ class Node {
    
   }
 
-  
   // See if my mouse cursor is -near- my Node
   boolean hoverEvent() {
     

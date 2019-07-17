@@ -6,7 +6,7 @@ Adapted here in different code by Nina Lutz for Clubes de Ciencia 2019
 
 */
 
-// Step 1: Create / Allocate Memory for your Node
+
 ArrayList<Node> people;
 ArrayList<Edge> cohort;
 Table data;
@@ -18,10 +18,10 @@ void setup() {
   initialize();
 }
 
-// Runs Over and Over at 60 - FPS
+
 void draw() {
   
-  background(255); // Black Background
+  background(255); 
 
   // Draw Edges
   for (Edge c: cohort) {
@@ -29,7 +29,7 @@ void draw() {
   }
   
     
-  // Draw People
+  // Draw Nodes
   for (Node p: people) {
     p.update(); // updates location IF selected
     p.drawNode();
@@ -59,8 +59,8 @@ void initialize() {
   people = new ArrayList<Node>();
   cohort = new ArrayList<Edge>();
   
+  //Makes new nodes for each row in spreadsheet
   for (int i=0; i<data.getRowCount(); i++) { 
-    //Node p = new Node("Node " + i, str(int(random(1, 10))));
     String name = data.getString(i, "Name");
     int year = data.getInt(i, "Grade");
     Node p = new Node(name, year);
