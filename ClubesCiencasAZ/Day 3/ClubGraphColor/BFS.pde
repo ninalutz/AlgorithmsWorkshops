@@ -17,6 +17,7 @@ class BFS{
         color c =  color(255);
         nodes.get(i).fillColor = c; //this changes the color 
       }
+      //Now how would you color the rest of the nodes to be in BFS colors?
     }
   }
 }
