@@ -1,5 +1,5 @@
 /**
-Simple Graph Icebreaker
+Simple Graph relations
 
 Idea taken from Ira Winder for 11.S195 
 Adapted here in different code by Nina Lutz for Clubes de Ciencia 2019
@@ -52,7 +52,7 @@ void mouseReleased() {
 }
 
 void keyPressed() {
-  initialize();
+  if(key == ' ') initialize();
 }
 
 void initialize() {
